@@ -1,6 +1,5 @@
 package Test;
 
-import junit.framework.TestCase;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -8,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.concurrent.TimeUnit;
 
-public class BaseTest extends TestCase {
+public class BaseTest extends Assert {
 
 
     protected static WebDriver driver;

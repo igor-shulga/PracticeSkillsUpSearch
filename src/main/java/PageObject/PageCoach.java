@@ -3,7 +3,6 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
@@ -39,6 +38,11 @@ public class PageCoach {
             coachCards.add(i.getText());
         }
         return coachCards;
+    }
+    public String openPersonalCoachPage(String S){
+        String qwe = "a[href*="+S+"]";
+        driver.findElement(By.cssSelector(qwe)).click();
+        return null;
     }
 
 }
